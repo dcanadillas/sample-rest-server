@@ -82,7 +82,7 @@ pipeline {
 	post {
 		always {
 			//clean up
-			dockerNuke(IMAGE_NAME, IMAGE_TAG)
+			dockerNuke($IMAGE_NAME, $IMAGE_TAG)
 		}
 	}
 }
